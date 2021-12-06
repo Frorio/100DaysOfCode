@@ -12,17 +12,20 @@ if height > 120:
     elif age < 18:
         print("you have to pay $7")
         bill = 7
+        
+    elif age >= 45 and age <= 55:
+        bill = 0
     
     else:
         print("You have to pay $12")
         bill = 12
     
-    want_photo = input("Do you want a photo taken? Y or N")
+    want_photo = input("Do you want a photo taken? Y or N: ")
     if want_photo == "Y" or "y":
         print(f"You have to pay: ${bill + 3}")
 
 else:
-    print("You can't ride the")
+    print("You can't ride the rollercoaster")
 
 # if height == 120: #you can't use just "="
 #     print("You can ride the rollercoaster!")
