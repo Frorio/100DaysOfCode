@@ -1,4 +1,4 @@
-word_list = ["ardvark", "baboon", "camel"]
+word_list = ["ananas", "mate", "honor", "ardvark", "camel", "feral"]
 
 stages = ['''
    +---+
@@ -79,7 +79,7 @@ end_of_game = False
 
 while not end_of_game:
     
-    guess = input("Gueess a letter: ").lower()
+    guess = input("Gueess a letter: ").lower()[0]
 
  # loop through each position in the chosen_word; 
  # If the letter at that position matches 'guess' then reveal tht letter in the display at that position.
